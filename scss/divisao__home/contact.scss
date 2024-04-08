@@ -1,0 +1,29 @@
+.contacts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0 40px 130px 40px;
+    flex-direction: row-reverse;
+
+    .link__contact{
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    text-align: center;
+    }
+    .link__contact:hover{
+    transform: scale(0.85);
+    }
+    .icon__contact{
+    text-decoration: none;
+    background-color: var(--laranja);
+    padding: 20px;
+    border-radius: 50%;
+    color: var(--azul-escuro);
+    font-size: 30px;
+    }   
+}
+
+

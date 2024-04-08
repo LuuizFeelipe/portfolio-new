@@ -1,0 +1,131 @@
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    .header__container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--azul-escuro);
+        border-bottom: 2px solid var(--azul-claro);
+        padding: 20px 25px;
+
+        .menu__hamburguer{
+            .header__menu{
+                color: var(--laranja);
+                font-size: 25px;
+                cursor: pointer;
+            }
+        }
+        .header__title{
+            font-size: 33px;
+            color: var(--branco);
+            font-weight: 500;
+            text-decoration: none;
+        }
+        
+        .header__icons{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .icon__item{
+                color: var(--laranja);
+                font-size: 25px;
+            }
+        }
+    }
+    .header__nav-bar{
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.507);
+        position: absolute;
+        top: 0;
+        z-index: 9000;
+
+        .container__header-nav{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 70%;
+            background: var(--gradiente-navbar);
+            height: 100vh;
+            border-bottom: 5px solid var(--branco);
+            z-index: 9001;
+
+            #close__nav-bar{
+                position: absolute;
+                top: 15px;
+                margin-left: 105% ;
+                font-size: 25px;
+                color: var(--branco);
+                background: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            .nav-bar__item{
+                color: var(--branco);
+                padding: 15px 5px 15px 20px;
+                border-bottom: 1px solid var(--branco);
+                display: grid;
+                grid-template-columns: 20% 70%;
+                grid-template-rows: auto;
+                grid-template-areas: "icon text";
+                gap: 5px;
+
+                .icon__nav-bar{
+                    grid-area: icon;
+                    font-size: 20px;
+                }
+                .item__text{
+                    grid-area: text;
+                    font-size: 25px;
+                    text-decoration: none;
+                    color: var(--branco);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1025px){
+    .header{
+        .header__container{
+            padding: 25px 40px;
+
+            .header__menu{
+                font-size: 22px;
+            }
+        
+            .header__title{
+                font-size: 30px;
+            }
+
+            .header__icons{
+                .icon__item{
+                    font-size: 22px;
+                    transition: 0.5s;
+                }
+            
+                .icon__item:hover{
+                    color: var(--branco);
+                }
+            }
+        }
+        .header__nav-bar{
+            .container__header-nav{
+                width: 400px;
+            }
+        }
+    }
+}

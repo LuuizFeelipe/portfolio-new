@@ -1,0 +1,49 @@
+.abillitys{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .abillity{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 0 125px;
+        max-width: 150px;
+        min-height: 125px;
+        background: var(--cinza-claro);
+        border-bottom: 5px solid var(--azul-claro);
+        border-radius: 30% 0% 0% 0%;
+        text-align: center;
+
+        .icon__abillity{
+            color: var(--branco);
+            font-size: 70px;
+        }
+        .title__abillity{
+            color: var(--branco);
+            margin-top: 15px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1025px){
+
+    .abillitys{
+        gap:35px;
+
+        .abillity{
+            max-width: 150px;
+            transition: 0.5s;
+        }
+        .abillity:hover{
+            transform: scale(1.1);
+            border-color: var(--branco);
+        }
+        .title__abillity{
+            font-size: 20px;
+        }
+    }
+}

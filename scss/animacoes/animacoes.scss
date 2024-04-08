@@ -1,0 +1,33 @@
+.abrirMenu{
+    animation-name: abrirMenu;
+    animation-duration: 0.6s;
+}
+
+@keyframes abrirMenu{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fecharMenu{
+    animation-name: fecharMenu;
+    animation-duration: 0.6s;
+}
+
+@keyframes fecharMenu{
+    from{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+

@@ -1,0 +1,20 @@
+.container__btn-top{
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+
+    #btn-top{
+        background: transparent;
+        border: none;
+        display: none;
+
+        .fa-angle-up{
+            color: var(--branco);
+            font-size: 30px;
+            padding: 8px;
+            background: var(--laranja);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}
