@@ -48,7 +48,7 @@
           <nav class="header__nav-bar disable" id="navbar">
               <div class="container__header-nav" id="container__navbar">         
                   <div>
-                    <button id="close__nav-bar"><i class="fa-solid fa-x"></i></button>
+                    <button type="button" title="fecha-nav-lateral" id="close__nav-bar"><i class="fa-solid fa-x"></i></button>
                   </div>
                   <ul>
                     <li class="nav-bar__item">
@@ -57,15 +57,15 @@
                     </li>
                     <li class="nav-bar__item">
                       <i class="fa-solid fa-brain icon__nav-bar"></i> 
-                      <a href="#habilidades" class="item__text">Habilidades</a>
+                      <a href="#softskills" class="item__text">Soft Skills</a>
+                    </li>
+                    <li class="nav-bar__item">
+                      <img src="/img/puzzle-nav.svg" alt="puzzle simbolo">
+                      <a href="#hardskills" class="item__text">Hard Skills</a>
                     </li>
                     <li class="nav-bar__item">
                       <i class="fa-solid fa-diagram-project icon__nav-bar"></i> 
                       <a href="#projetos" class="item__text">Projetos</a>
-                    </li>
-                    <li class="nav-bar__item">
-                      <i class="fa-solid fa-location-dot icon__nav-bar"></i> 
-                      <a href="#localizacao" class="item__text">Localização</a>
                     </li>
                     <li class="nav-bar__item">
                       <i class="fa-solid fa-phone icon__nav-bar"></i> 
@@ -78,7 +78,7 @@
 
         <main>
           <section class="container__presentation js-scroll">
-              <img class="presentation__imagem" src="./img/psdfotosite-laranja.jpg" alt="foto Luiz Felipe">
+              <img class="presentation__imagem" src="./img/foto-site.png" alt="foto Luiz Felipe">
               <div class="presentation__text">
                 <p class="presentation__text-title">Olá, meu nome é <strong class="name-strong">Luiz</strong> <i class="fa-solid fa-code"></i></p>
                 <p class="presentation__text-phrase">Desenvolvedor Front-End <br>& UI/UX Designer.</p>
@@ -157,13 +157,14 @@
             <section class="projects__container js-scroll" id="projetos">
               <h2 class="title" ><span>projetos</span>.</h2>
               <div class="projects">
-                      <div class="card__project">
+                <div class="card__project">
                           <div class="container__previa">
                               <h4 class="title__previa-project">Cropped's<span>.</span></h4>
                               <p class="paragraph__previa-project">Clone do site Cropped's desenvolvido através de <span>HTML</span>, <span>SASS</span> e <span>JavaScript</span>.</p>
                               <a class="link__previa-project" href="https://clone-croppeds.vercel.app/" target="_blank">Visualizar</a>
                           </div>
-                      </div>
+                </div>
+                <a class="all__projects-btn" href="#">ver todos</a>
               </div>
             </section>
 
@@ -172,19 +173,24 @@
 
         <footer>
           <section class="container__contacts js-scroll" id="contato">
-            <h2 class="title" >Contato</h2>
+            <h2 class="title">contato<span>.</span></h2>
               <div class="contacts">
                 <a href="https://www.linkedin.com/in/luiz-felipe-60a8191b0/" target="_blank" class="link__contact icon__linkedin">
-                  <i class="fa-brands fa-linkedin-in icon__contact"></i>
+                  <div><img src="./img/linkedin.svg" alt="Linkedin"></div>
+                  <span>Luiz Felipe</span>
                 </a>
+
                 <a href="https://github.com/LuuizFeelipe" target="_blank" class="link__contact icon__github">
-                  <i class="fa-brands fa-github icon__contact"></i>
+                  <div><img src="./img/github.svg" alt="Github"></div>
+                  <span>LuuizFeelipe</span>
                 </a>
                 <a href="mailto:luiznovafluiz@gmail.com" target="_blank" class="link__contact icon__email">
-                  <i class="fa-solid fa-envelope icon__contact"></i>
+                  <div><img src="./img/email.svg" alt="Email"></div>
+                  <span>luiznovafluiz@gmail.com</span>
                 </a>
                 <a href="https://api.whatsapp.com/send?phone=5522999563691&text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20Front-End!" target="_blank" class="link__contact icon__github">
-                  <i class="fa-solid fa-phone icon__contact"></i>
+                  <div><img src="./img/whatsapp.svg" alt="Whatsapp"></div>
+                  <span>(22) 99956-3691</span>
                 </a>
               </div>
           </section>

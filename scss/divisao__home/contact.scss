@@ -1,29 +1,47 @@
-.contacts{
+footer {
+    background: $gradiente-footer;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 15px;
-    padding: 0 40px 130px 40px;
-    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
 
-    .link__contact{
-    text-decoration: none;
-    transition: 0.5s;
-    cursor: pointer;
-    text-align: center;
+.container__contacts {
+    margin: 0 20px;
+
+    @media #{$media-tablet} {
+        width: 500px;
     }
-    .link__contact:hover{
-    transform: scale(0.85);
+
+    .contacts {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        padding-bottom: 130px;
     }
-    .icon__contact{
-    text-decoration: none;
-    background-color: $laranja;
-    padding: 20px;
-    border-radius: 50%;
-    color: $azul-escuro;
-    font-size: 30px;
-    }   
+    
+    .link__contact {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-decoration: none;
+        color: $branco-2;
+        font-family: $fonte-titulos;
+        font-weight: $f-bold;
+
+        div {
+            min-width: 50px;
+            min-height: 50px;
+            background: $branco-2;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
 }
 
 

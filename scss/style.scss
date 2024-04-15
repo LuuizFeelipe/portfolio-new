@@ -1,4 +1,6 @@
 $media-mobile: "(max-width: 640px)";
+$media-tablet: "(max-width: 1199px)";
+
 $branco: #FFFFFF;
 $branco-2: #FFF8F1;
 $branco-titulo: #FFF3E8;
@@ -15,7 +17,7 @@ $cinza-escuro: #7e7e7e;
 $cinza-claro: #adadadba;
 $cinza-claro-2: #BDBDBD;
 $cinza-texto: #c5c5c5;
-$gradiente-botao: linear-gradient(to right, #3B82F6 55%, #102a72);
+$gradiente-footer: linear-gradient(to bottom, #0F1C3F 40%, #ef9949b0);
 $gradiente-navbar: linear-gradient(to bottom, #3B82F6 5%, #102a72);
 $fonte-texto: 'Open Sans';
 $fonte-titulos: 'Poppins';
