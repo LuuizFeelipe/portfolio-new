@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- SCRIPT FONT AWESOME -->
     <script src="https://kit.fontawesome.com/0a32c44bfb.js" crossorigin="anonymous" defer></script>
     <!-- SCRIPT -->
@@ -26,18 +27,23 @@
     <div class="container">
         <header class="header" id="header">
           <div class="header__container">
-              <div class="menu__hamburguer">
-              <i class="fa-solid fa-bars header__menu" id="header__menu"></i>
+              <div class="menu__mobile">
+                <div class="menu__hamburguer">
+                  <img class="header__menu" id="header__menu" src="./img/menu-hamburguer.svg" alt="Menu Hamburguer">
+                </div>
+                <a href="/index.html"><img src="./img/logolz-mobile.svg" alt="Logo LZ Dev"></a>
+                <a href="https://www.linkedin.com/in/luiz-felipe-60a8191b0/" target="_blank"><img src="/img/linkedin-menu.svg" alt="Linkedin"></a>
               </div>
               <div class="menu__desktop">
-                <a href="#sobremim" class="item__text">Sobre mim</a>
-                <a href="#hardskills" class="item__text">Hard Skills</a>
-                <a href="#softskills" class="item__text">Soft Skills</a>
-                <a href="#projetos" class="item__text">Projetos</a>
-                <a href="#contato" class="item__text">Contato</a>
+                <img src="./img/logolz.svg" alt="Logo LZ dev">
+                <nav>
+                  <a href="#sobremim" class="item__text">Sobre mim</a>
+                  <a href="#softskills" class="item__text">Soft Skills</a>
+                  <a href="#hardskills" class="item__text">Hard Skills</a>
+                  <a href="#projetos" class="item__text">Projetos</a>
+                  <a href="#contato" class="item__text">Contato</a>
+                </nav>
               </div>
-
-
           </div>
           <nav class="header__nav-bar disable" id="navbar">
               <div class="container__header-nav" id="container__navbar">         
@@ -75,64 +81,93 @@
               <img class="presentation__imagem" src="./img/psdfotosite-laranja.jpg" alt="foto Luiz Felipe">
               <div class="presentation__text">
                 <p class="presentation__text-title">Olá, meu nome é <strong class="name-strong">Luiz</strong> <i class="fa-solid fa-code"></i></p>
-                <p class="presentation__text-phrase">Desenvolvedor Front-End</p>
+                <p class="presentation__text-phrase">Desenvolvedor Front-End <br>& UI/UX Designer.</p>
               </div>
               <a class="button-contact" href="mailto:luiznovafluiz@gmail.com">Entre em Contato</a>
           </section>
 
-          <section class="container__description js-scroll" id="sobremim">
-              <h2 class="title">Sobre mim</h2>
-              <p class="description-text">Como estudante de desenvolvimento front-end, venho buscando experiência em criar sites e aplicações web utilizando tecnologias como HTML, CSS, Javascript e Bootstrap. Através de minhas hablidades, considero-me capaz de criar interfaces elegantes e funcionais, garantindo a melhor experiência do usuário.</p>
-              <p class="description-text">Além disso, atualmente estou cursando bacharelado em Sistemas de Informação no CEFET/RJ e também tenho conhecimento intermediário em Photoshop, o que me permite criar designs criativos e inovadores para os meus projetos. Sou um profissional dedicado, apaixonado por tecnologia e sempre em busca de aprendizado e aprimoramento constante.</p>
-          </section>
+          <div class="content-main">
+            <section class="container__description js-scroll" id="sobremim">
+                <h2 class="title">sobre <span>mim</span>.</h2>
+                <p class="description-text">Como estudante de desenvolvimento front-end, venho buscando experiência em criar sites e aplicações web utilizando tecnologias como HTML, CSS, Javascript e Bootstrap. Através de minhas hablidades, considero-me capaz de criar interfaces elegantes e funcionais, garantindo a melhor experiência do usuário.</p>
+                <p class="description-text">Além disso, atualmente estou cursando bacharelado em Sistemas de Informação no CEFET/RJ e também tenho conhecimento em UI/UX design, o que me permite criar designs criativos e inovadores para os meus projetos. Sou um profissional dedicado, apaixonado por tecnologia e sempre em busca de aprendizado e aprimoramento constante.</p>
+            </section>
 
-          <section class="abillity__container js-scroll" id="habilidades">
-            <h2 class="title" >Habilidades</h2>
-            <div class="abillitys">
-                <div class="abillity html5">
-                  <i class="fa-brands fa-html5 icon__abillity"></i>
-                  <p class="title__abillity">HTML5</p>
-                </div>
-                <div class="abillity css3">
-                  <i class="fa-brands fa-css3-alt icon__abillity"></i>
-                  <p class="title__abillity">CSS3</p>
-                </div>
-                <div class="abillity sass">
-                  <i class="fa-brands fa-sass icon__abillity"></i>
-                  <p class="title__abillity">Sass</p>
-                </div>
-                <div class="abillity javascript">
-                  <i class="fa-brands fa-square-js icon__abillity"></i>
-                  <p class="title__abillity">JavaScript</p>
-                </div>
-                <div class="abillity bootstrap">
-                  <i class="fa-brands fa-bootstrap icon__abillity"></i>
-                  <p class="title__abillity">Bootstrap</p>
-                </div>
-                <div class="abillity figma">
-                  <i class="fa-brands fa-figma icon__abillity"></i>
-                  <p class="title__abillity">Figma</p>
-                </div>
-            </div>
-          </section>
+            <section class="skills__container">
+              <div class="soft_skills__container js-scroll" id="softskills">
+                <h2 class="title"><span>soft</span> skills<span>.</span></h2>
+                <p class="description__skill">Habilidades Interpessoais</p>
+                <ul class="soft__skills">
+                  <li class="soft__skills-item">
+                    <img src="./img/problemas.svg" alt="Quebra-cabeças">
+                    <span>Resolução de problemas</span>
+                  </li>
+                  <li class="soft__skills-item">
+                    <img src="./img/equipe.svg" alt="Equipe">
+                    <span>Trabalho em equipe</span>
+                  </li>
+                  <li class="soft__skills-item">
+                    <img src="./img/criatividade.svg" alt="Lâmpada">
+                    <span>Criatividade</span>
+                  </li>
+                  <li class="soft__skills-item">
+                    <img src="./img/comunicacao.svg" alt="Balões de diálogo">
+                    <span>Comunicação</span>
+                  </li>
+                  <li class="soft__skills-item">
+                    <img src="./img/empatia.svg" alt="Cérebro">
+                    <span>Empatia</span> 
+                  </li>
+                </ul>
+              </div>
 
-          <section class="projects__container js-scroll" id="projetos">
-            <h2 class="title" >Projetos</h2>
-            <div class="projects">
-                    <div class="card__project">
-                        <div class="container__previa">
-                            <h4 class="title__previa-project">Cropped's</h4>
-                            <p class="paragraph__previa-project">Clone do site Cropped's desenvolvido através de HTML, SASS e JavaScript.</p>
-                            <a class="link__previa-project" href="https://clone-croppeds.vercel.app/" target="_blank">Visualizar projeto</a>
-                        </div>
+              <div class="hard_skills__container js-scroll" id="hardskills">
+                <h2 class="title"><span>hard</span> skills<span>.</span></h2>
+                <p class="description__skill">Habilidades Técnicas</p>
+                <div class="abillitys">
+                    <div class="abillity html5">
+                      <i class="fa-brands fa-html5 icon__abillity"></i>
+                      <p class="title__abillity">HTML5</p>
                     </div>
-            </div>
-          </section>
+                    <div class="abillity css3">
+                      <i class="fa-brands fa-css3-alt icon__abillity"></i>
+                      <p class="title__abillity">CSS3</p>
+                    </div>
+                    <div class="abillity sass">
+                      <i class="fa-brands fa-sass icon__abillity"></i>
+                      <p class="title__abillity">Sass</p>
+                    </div>
+                    <div class="abillity javascript">
+                      <i class="fa-brands fa-square-js icon__abillity"></i>
+                      <p class="title__abillity">JavaScript</p>
+                    </div>
+                    <div class="abillity bootstrap">
+                      <i class="fa-brands fa-bootstrap icon__abillity"></i>
+                      <p class="title__abillity">Bootstrap</p>
+                    </div>
+                    <div class="abillity figma">
+                      <i class="fa-brands fa-figma icon__abillity"></i>
+                      <p class="title__abillity">Figma</p>
+                    </div>
+                </div>
+              </div>
+            </section>
 
-          <section class="container__map js-scroll" id="localizacao">
-            <h2 class="title">Localização</h2>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118141.51255645326!2d-42.5329603!3d-22.2809342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x978a936f151283%3A0xff2b16c0bfb117c4!2sNova%20Friburgo%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1682646458485!5m2!1spt-BR!2sbr" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </section>
+
+            <section class="projects__container js-scroll" id="projetos">
+              <h2 class="title" ><span>projetos</span>.</h2>
+              <div class="projects">
+                      <div class="card__project">
+                          <div class="container__previa">
+                              <h4 class="title__previa-project">Cropped's<span>.</span></h4>
+                              <p class="paragraph__previa-project">Clone do site Cropped's desenvolvido através de <span>HTML</span>, <span>SASS</span> e <span>JavaScript</span>.</p>
+                              <a class="link__previa-project" href="https://clone-croppeds.vercel.app/" target="_blank">Visualizar</a>
+                          </div>
+                      </div>
+              </div>
+            </section>
+
+          </div>
         </main>
 
         <footer>
@@ -161,7 +196,7 @@
         </footer>
     </div>
 
-        <!-- SCRIPT -->
-        <script src="./js/index.js" defer></script>
+    <!-- SCRIPT -->
+    <script src="./js/index.js" defer></script>
   </body>
 </html>

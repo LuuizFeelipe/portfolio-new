@@ -6,35 +6,73 @@
     z-index: 1000;
 
     .header__container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
         background-color: $azul-escuro;
         border-bottom: 2px solid $azul-claro;
-        padding: 20px 25px;
-
-        .menu__hamburguer {
+        padding: 15px 25px;
+        
+        .menu__mobile {
             display: none;
-
+    
             @media #{$media-mobile} {
-                display: block;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
-
-            .header__menu {
-                color: $laranja;
-                font-size: 25px;
-                cursor: pointer;
-            }
+                .header__menu {
+                    color: $laranja;
+                    font-size: 25px;
+                    cursor: pointer;
+                }
         }
-
+        
         .menu__desktop {
-
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
 
             @media #{$media-mobile} {
                 display: none;
             }
+
+            nav {
+                display: flex;
+                align-items: center;
+                gap: 37px;
+
+                a {
+                    text-decoration: none;
+                    color: $branco-2;
+                    text-transform: lowercase;
+                    font-size: 18px;
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        position: absolute;
+                        bottom: -7px;
+                        left: 50%;
+                        width: 0;
+                        height: 2px;
+                        background-color: $laranja;
+                        transition: width 0.3s ease, left 0.3s ease; /* Adiciona transição para left */
+                        transform: translate(-50%, -50%); /* Move o ponto central para o centro do link */
+                    }
+
+                    &:hover {
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+
+                    &:last-child {
+                        color: $laranja;
+                    }
+                }
+            }
         }
+
         .header__title{
             font-size: 33px;
             color: $branco;
@@ -53,6 +91,7 @@
             }
         }
     }
+
     .header__nav-bar{
         width: 100vw;
         height: 100vh;

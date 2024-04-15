@@ -1,49 +1,105 @@
-.abillitys{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+.soft_skills__container {
+    background: $azul-escuro-2;
+    border-radius: 10px;
+    padding: 28px;
+    max-width: 400px;
+    margin: 87px auto 0 auto;
 
-    .abillity{
+    .soft__skills {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         justify-content: center;
-        flex: 1 0 125px;
-        max-width: 150px;
-        min-height: 125px;
-        background: $cinza-claro;
-        border-bottom: 5px solid $azul-claro;
-        border-radius: 30% 0% 0% 0%;
-        text-align: center;
+        gap: 25px;
 
-        .icon__abillity{
-            color: $branco;
-            font-size: 70px;
+        li {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            img {
+                min-width: 33px;
+            }
+
+            span {
+                color: $branco-2;
+                font-size: 17px;
+            }
         }
-        .title__abillity{
-            color: $branco;
-            margin-top: 15px;
+    }
+}
+
+.soft_skills__container,
+.hard_skills__container {
+    margin-top: 87px;
+
+    .title {
+        margin: 10px 0;
+    }
+
+    .description__skill {
+        color: $cinza-claro-2;
+        font-size: 18px;
+        font-weight: $f-semi-bold;
+        text-transform: uppercase;
+        margin-bottom: 37px;
+    }
+}
+
+.hard_skills__container {
+    .abillitys{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .abillity{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1 0 125px;
+            max-width: 150px;
+            min-height: 125px;
+            background: $azul-claro-2;
+            border-bottom: 5px solid $azul-claro-3;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+
+            .icon__abillity{
+                color: $branco;
+                font-size: 70px;
+            }
+            .title__abillity{
+                color: $branco;
+                margin-top: 15px;
+                font-family: $fonte-titulos;
+                font-style: italic;
+                font-weight: 200;
+            }
         }
     }
 }
 
 
+
+
 @media screen and (min-width: 1025px){
+    .hard_skills__container {
+        .abillitys{
+            gap:35px;
 
-    .abillitys{
-        gap:35px;
-
-        .abillity{
-            max-width: 150px;
-            transition: 0.5s;
-        }
-        .abillity:hover{
-            transform: scale(1.1);
-            border-color: $branco;
-        }
-        .title__abillity{
-            font-size: 20px;
+            .abillity{
+                max-width: 150px;
+                transition: 0.5s;
+            }
+            .abillity:hover{
+                transform: scale(1.1);
+                border-color: $branco;
+            }
+            .title__abillity{
+                font-size: 20px;
+            }
         }
     }
 }
