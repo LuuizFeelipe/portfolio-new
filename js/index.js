@@ -76,7 +76,7 @@ botoesMenu.forEach((ev)=>{
 
 // SCROLL LINK INTERNO
 
-const linksInternos = document.querySelectorAll('.nav-bar__item a[href^="#"]');
+const linksInternos = document.querySelectorAll('a[href^="#"]');
 
 function scrollToSection(event){
     event.preventDefault();

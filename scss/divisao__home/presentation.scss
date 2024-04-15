@@ -14,30 +14,30 @@
         text-align: center;
 
         .presentation__text-title{
-            color: var(--branco-escuro);
+            color: $branco-escuro;
             font-weight: 500;
             font-size: 55px;
 
             .name-strong{
-                color: var(--laranja);
+                color: $laranja;
             }
             .fa-code{
-                color: var(--laranja);
+                color: $laranja;
                 font-size: 25px;
             }
         }
         .presentation__text-phrase{
             font-size: 28px;
             font-weight: 300;
-            color: var(--cinza-claro);
+            color: $cinza-claro;
             margin-top: 5px;
         }
     }
     .button-contact{
         text-decoration: none;
         text-align: center;
-        background: var(--gradiente-botao);
-        color: var(--branco);
+        background: $gradiente-botao;
+        color: $branco;
         width: 60%;
         max-width: 350px;
         padding: 15px 10px;

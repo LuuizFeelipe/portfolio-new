@@ -9,25 +9,25 @@
      .container__previa{
         width: auto;
         max-width: 450px;
-        border: var(--azul) 1.5px solid;
+        border: $azul 1.5px solid;
         display: flex;
         flex-direction: column;
         padding: 30px;
 
         .title__previa-project{
             font-size: 35px;
-            color: var(--laranja);
+            color: $laranja;
         }
         .paragraph__previa-project{
             font-size: 25px;
             font-weight: 300;
-            color: var(--cinza-texto);
+            color: $cinza-texto;
             padding: 20px 0;
         }
         .link__previa-project{
             font-size: 30px;
             text-decoration: none;
-            color: var(--azul);
+            color: $azul;
         }
      }
 

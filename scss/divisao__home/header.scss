@@ -1,28 +1,43 @@
+//CORES
 .header{
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
 
-    .header__container{
+    .header__container {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        background-color: var(--azul-escuro);
-        border-bottom: 2px solid var(--azul-claro);
+        background-color: $azul-escuro;
+        border-bottom: 2px solid $azul-claro;
         padding: 20px 25px;
 
-        .menu__hamburguer{
-            .header__menu{
-                color: var(--laranja);
+        .menu__hamburguer {
+            display: none;
+
+            @media #{$media-mobile} {
+                display: block;
+            }
+
+            .header__menu {
+                color: $laranja;
                 font-size: 25px;
                 cursor: pointer;
             }
         }
+
+        .menu__desktop {
+
+
+            @media #{$media-mobile} {
+                display: none;
+            }
+        }
         .header__title{
             font-size: 33px;
-            color: var(--branco);
+            color: $branco;
             font-weight: 500;
             text-decoration: none;
         }
@@ -33,7 +48,7 @@
             gap: 20px;
 
             .icon__item{
-                color: var(--laranja);
+                color: $laranja;
                 font-size: 25px;
             }
         }
@@ -51,9 +66,9 @@
             left: 0;
             top: 0;
             width: 70%;
-            background: var(--gradiente-navbar);
+            background: $gradiente-navbar;
             height: 100vh;
-            border-bottom: 5px solid var(--branco);
+            border-bottom: 5px solid $branco;
             z-index: 9001;
 
             #close__nav-bar{
@@ -61,7 +76,7 @@
                 top: 15px;
                 margin-left: 105% ;
                 font-size: 25px;
-                color: var(--branco);
+                color: $branco;
                 background: transparent;
                 border: none;
                 cursor: pointer;
@@ -73,9 +88,9 @@
             display: flex;
             flex-direction: column;
             .nav-bar__item{
-                color: var(--branco);
+                color: $branco;
                 padding: 15px 5px 15px 20px;
-                border-bottom: 1px solid var(--branco);
+                border-bottom: 1px solid $branco;
                 display: grid;
                 grid-template-columns: 20% 70%;
                 grid-template-rows: auto;
@@ -90,7 +105,7 @@
                     grid-area: text;
                     font-size: 25px;
                     text-decoration: none;
-                    color: var(--branco);
+                    color: $branco;
                 }
             }
         }
@@ -118,7 +133,7 @@
                 }
             
                 .icon__item:hover{
-                    color: var(--branco);
+                    color: $branco;
                 }
             }
         }

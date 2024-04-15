@@ -9,10 +9,10 @@
         display: none;
 
         .fa-angle-up{
-            color: var(--branco);
+            color: $branco;
             font-size: 30px;
             padding: 8px;
-            background: var(--laranja);
+            background: $laranja;
             border-radius: 50%;
             cursor: pointer;
         }

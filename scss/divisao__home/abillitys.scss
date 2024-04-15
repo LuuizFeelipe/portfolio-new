@@ -12,17 +12,17 @@
         flex: 1 0 125px;
         max-width: 150px;
         min-height: 125px;
-        background: var(--cinza-claro);
-        border-bottom: 5px solid var(--azul-claro);
+        background: $cinza-claro;
+        border-bottom: 5px solid $azul-claro;
         border-radius: 30% 0% 0% 0%;
         text-align: center;
 
         .icon__abillity{
-            color: var(--branco);
+            color: $branco;
             font-size: 70px;
         }
         .title__abillity{
-            color: var(--branco);
+            color: $branco;
             margin-top: 15px;
         }
     }
@@ -40,7 +40,7 @@
         }
         .abillity:hover{
             transform: scale(1.1);
-            border-color: var(--branco);
+            border-color: $branco;
         }
         .title__abillity{
             font-size: 20px;
