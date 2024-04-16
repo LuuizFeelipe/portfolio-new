@@ -133,6 +133,12 @@ footer {
     width: 100%;
   }
 }
+@media (min-width: 1199px) {
+  .container__contacts {
+    max-width: 1200px;
+    width: 100%;
+  }
+}
 .container__contacts .contacts {
   display: flex;
   flex-direction: column-reverse;
@@ -511,14 +517,55 @@ footer {
     max-width: none;
   }
 }
+@media (min-width: 1199px) {
+  .projects__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 130px;
+    margin-bottom: 80px;
+  }
+  .projects__container .projects {
+    margin-left: 45px;
+    width: 50%;
+    align-items: flex-start !important;
+  }
+  .projects__container .title.title-mobile-tablet {
+    display: none;
+  }
+  .projects__container .title.title-desktop {
+    display: block !important;
+    width: 50%;
+    margin-top: 0;
+    font-size: 150px;
+    line-height: 130px;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 641px) {
+  .projects__container .title.title-desktop {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .projects__container .title.title-desktop {
+    display: none;
+  }
+}
 .projects__container .projects {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
-.projects__container .projects .all__projects-btn {
+.projects__container .projects .projects-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.projects__container .projects .projects-content .all__projects-btn {
   display: flex;
   align-items: center;
   font-family: "Open Sans";
@@ -531,11 +578,10 @@ footer {
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
-  align-self: start;
   text-transform: uppercase;
   margin-top: 40px;
 }
-.projects__container .projects .all__projects-btn::after {
+.projects__container .projects .projects-content .all__projects-btn::after {
   content: url("../../img/projetos.svg");
   margin-left: 17px;
 }
@@ -580,6 +626,7 @@ footer {
   text-align: center;
   padding: 20px 10px;
   border-radius: 5px;
+  margin-top: 20px;
 }
 
 .container__btn-top {

@@ -17,6 +17,11 @@ footer {
         width: 100%;
     }
 
+    @media #{$media-desktop} {
+        max-width: 1200px;
+        width: 100%;
+    }
+
     .contacts {
         display: flex;
         flex-direction: column-reverse;
