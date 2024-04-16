@@ -1,3 +1,48 @@
+.skills__container {
+    @media #{$media-desktop} {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .hard_skills__container {
+            margin-top: 0px;
+            width: 50%;
+            padding-left: 40px;
+
+            .title {
+                font-size: 80px;
+            }
+
+            .abillitys {
+                gap:35px;
+                justify-content: flex-start;
+    
+                .abillity {
+                    max-width: 150px;
+                    transition: 0.5s;
+                }
+                .abillity:hover {
+                    transform: scale(1.1);
+                    border-color: $branco;
+                }
+                .title__abillity {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .soft_skills__container {
+            margin: 0;
+            max-width: 489px;
+            width: 100%;
+
+            .title {
+                font-size: 80px;
+            }
+        }
+    }
+}
+
 .soft_skills__container {
     background: $azul-escuro-2;
     border-radius: 10px;
@@ -76,29 +121,6 @@
                 font-family: $fonte-titulos;
                 font-style: italic;
                 font-weight: 200;
-            }
-        }
-    }
-}
-
-
-
-
-@media screen and (min-width: 1025px){
-    .hard_skills__container {
-        .abillitys{
-            gap:35px;
-
-            .abillity{
-                max-width: 150px;
-                transition: 0.5s;
-            }
-            .abillity:hover{
-                transform: scale(1.1);
-                border-color: $branco;
-            }
-            .title__abillity{
-                font-size: 20px;
             }
         }
     }

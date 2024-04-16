@@ -4,6 +4,11 @@
     align-items: center;
     max-width: 344px;
 
+    @media #{$media-desktop} {
+        max-width: 1200px;
+        width: 100%;
+    }
+
     .presentation__imagem{
         flex: 1 0 100px;
         width: 70%;
@@ -40,6 +45,7 @@
             font-family: $fonte-titulos;
         }
     }
+
     .button-contact{
         display: flex;
         align-items: center;
@@ -71,11 +77,11 @@
 }
 
 
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 1199px){
 
     .container__presentation{
         display:grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 2.2fr 1fr;
         grid-template-areas: 
         "frase foto"
         "botao foto";
@@ -83,7 +89,7 @@
 
         .presentation__imagem{
             grid-area: foto;
-            justify-self: start;
+            justify-self: end;
             min-width: 260px;
             transition: 1s;
         }
@@ -93,27 +99,35 @@
         .presentation__text{
             grid-area: frase;
             align-self: end;
-            justify-self: center;
+            justify-self: start;
             margin: 15px 0;
 
             .presentation__text-title{
                 font-size: 50px;
-                display: block;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                .fa-code{
+                    display: inline;
+                }
             }
 
             .presentation__text-phrase{
-                font-size: 30px;
-
+                font-size: 19px;
+                line-height: 27px;
+                margin-bottom: 30px;
             }
         }
         .button-contact{
             grid-area: botao;
             font-size: 22px;
             padding: 15px;
-            justify-self: center;
-            align-self: start;
-            max-width: 300px;
-            cursor: pointer;    
+            width: 360px;
+            justify-content: center;
+            height: 70px;
+            cursor: pointer; 
+            max-width: none;
         }    
     }
 }

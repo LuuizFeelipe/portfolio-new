@@ -7,10 +7,14 @@ footer {
 }
 
 .container__contacts {
-    margin: 0 20px;
+    @media #{$media-mobile} {
+        padding: 0 20px;
+        width: 100%;
+    }
 
     @media #{$media-tablet} {
-        width: 500px;
+        max-width: 500px;
+        width: 100%;
     }
 
     .contacts {

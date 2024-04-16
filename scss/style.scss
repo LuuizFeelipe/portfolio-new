@@ -1,5 +1,6 @@
 $media-mobile: "(max-width: 640px)";
-$media-tablet: "(max-width: 1199px)";
+$media-tablet: "(min-width: 641px)";
+$media-desktop: "(min-width: 1199px)";
 
 $branco: #FFFFFF;
 $branco-2: #FFF8F1;
@@ -44,10 +45,11 @@ $f-bold: 700;
 @import './animacoes/animacoes.scss';
 
 
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: $azul-escuro;
     font-size: 16px;
     font-weight: 400;
@@ -56,7 +58,7 @@ body{
     padding-top: 100px;
 }
 
-main{
+main {
     margin: 0 20px;
     display: flex;
     flex-direction: column;
@@ -65,18 +67,26 @@ main{
 
 .content-main {
     max-width: 500px;
+
+    @media #{$media-desktop} {
+        max-width: 1200px;
+    }
+
 }
 
-.container{
+.container {
     margin: 0 auto;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.active{
+.active {
     display: block;
 }
 
-.disable{
+.disable {
     display: none;
 }
 
@@ -85,20 +95,20 @@ main{
     transition: 0.5s;
     transform: translate3d(-30px, 0, 0);
 }
-.js-scroll.ativo{
+.js-scroll.ativo {
     opacity: 1;
     transform: translate3d(0, 0, 0);
 }
 
 
-@media screen and (min-width: 1025px){
-    main{
+@media screen and (min-width: 1199px) {
+    main {
         margin: 0 70px;
     }
 }
 
-@media screen and (min-width: 1500px){
-    main{
+@media screen and (min-width: 1500px) {
+    main {
         margin: 0 150px;
     }
 }
