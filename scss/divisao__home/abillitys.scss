@@ -1,5 +1,7 @@
+@use '../variables.scss' as vars;
+
 .skills__container {
-    @media #{$media-desktop} {
+    @media #{vars.$media-desktop} {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -23,7 +25,7 @@
                 }
                 .abillity:hover {
                     transform: scale(1.1);
-                    border-color: $branco;
+                    border-color: vars.$branco;
                 }
                 .title__abillity {
                     font-size: 20px;
@@ -44,7 +46,7 @@
 }
 
 .soft_skills__container {
-    background: $azul-escuro-2;
+    background: vars.$azul-escuro-2;
     border-radius: 10px;
     padding: 28px;
     max-width: 400px;
@@ -67,7 +69,7 @@
             }
 
             span {
-                color: $branco-2;
+                color: vars.$branco-2;
                 font-size: 17px;
             }
         }
@@ -83,9 +85,9 @@
     }
 
     .description__skill {
-        color: $cinza-claro-2;
+        color: vars.$cinza-claro-2;
         font-size: 18px;
-        font-weight: $f-semi-bold;
+        font-weight: vars.$f-semi-bold;
         text-transform: uppercase;
         margin-bottom: 37px;
     }
@@ -106,19 +108,19 @@
             flex: 1 0 125px;
             max-width: 150px;
             min-height: 125px;
-            background: $azul-claro-2;
-            border-bottom: 5px solid $azul-claro-3;
+            background: vars.$azul-claro-2;
+            border-bottom: 5px solid vars.$azul-claro-3;
             border-radius: 10px 10px 0 0;
             text-align: center;
 
             .icon__abillity{
-                color: $branco;
+                color: vars.$branco;
                 font-size: 70px;
             }
             .title__abillity{
-                color: $branco;
+                color: vars.$branco;
                 margin-top: 15px;
-                font-family: $fonte-titulos;
+                font-family: vars.$fonte-titulos;
                 font-style: italic;
                 font-weight: 200;
             }

@@ -1,59 +1,14 @@
-$media-mobile: "(max-width: 640px)";
-$media-tablet: "(min-width: 641px)";
-$media-desktop: "(min-width: 1199px)";
-
-$branco: #FFFFFF;
-$branco-2: #FFF8F1;
-$branco-titulo: #FFF3E8;
-$branco-escuro: #f0f0f0;
-$laranja: #EC8D35;
-$preto: #000000;
-$azul-escuro: #0F1C3F;
-$azul-escuro-2: #1D2E5A;
-$azul-claro: #3B82F6;
-$azul-claro-2: #2E3F6D;
-$azul-claro-3: #7182AF;
-$azul: #4169E1;
-$cinza-escuro: #7e7e7e;
-$cinza-claro: #adadadba;
-$cinza-claro-2: #BDBDBD;
-$cinza-texto: #c5c5c5;
-$gradiente-footer: linear-gradient(to bottom, #0F1C3F 40%, #ef9949b0);
-$gradiente-navbar: linear-gradient(to bottom, #3B82F6 5%, #102a72);
-$fonte-texto: 'Open Sans';
-$fonte-titulos: 'Poppins';
-
-$f-extra-light: 200;
-$f-light: 300;
-$f-regular: 400;
-$f-medium: 500;
-$f-semi-bold: 600;
-$f-bold: 700;
-
-
-//PARTES DA HOME
-@import './divisao__home/abillitys.scss';
-@import './divisao__home/contact.scss';
-@import './divisao__home/description.scss';
-@import './divisao__home/header.scss';
-@import './divisao__home/map.scss';
-@import './divisao__home/presentation.scss';
-@import './divisao__home/projects.scss';
-@import './divisao__home/btn-top.scss';
-
-//ANIMAÇÕES
-@import './animacoes/animacoes.scss';
-
+@use './index' as index;
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: $azul-escuro;
+    background-color: index.$azul-escuro;
     font-size: 16px;
     font-weight: 400;
-    font-family: $fonte-texto;
+    font-family: index.$fonte-texto;
     box-sizing: border-box;
     padding-top: 100px;
 }
@@ -68,7 +23,7 @@ main {
 .content-main {
     max-width: 500px;
 
-    @media #{$media-desktop} {
+    @media #{index.$media-desktop} {
         max-width: 1200px;
     }
 

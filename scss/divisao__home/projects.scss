@@ -1,5 +1,7 @@
+@use '../variables.scss' as vars;
+
 .projects__container{
-    @media #{$media-desktop} {
+    @media #{vars.$media-desktop} {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -28,7 +30,7 @@
         }
     }
 
-    @media #{$media-tablet} {
+    @media #{vars.$media-tablet} {
         .title {
             &.title-desktop {
                 display: none;
@@ -36,7 +38,7 @@
         }
     }
 
-    @media #{$media-mobile} {
+    @media #{vars.$media-mobile} {
         .title {
             &.title-desktop {
                 display: none;
@@ -84,7 +86,7 @@
      .container__previa {
         width: auto;
         max-width: 400px;
-        background: $azul-claro-3;
+        background: vars.$azul-claro-3;
         display: flex;
         flex-direction: column;
         padding: 30px;
@@ -93,20 +95,20 @@
 
         .title__previa-project{
             font-size: 32px;
-            color: $branco-titulo;
-            font-family: $fonte-titulos;
-            font-weight: $f-bold;
+            color: vars.$branco-titulo;
+            font-family: vars.$fonte-titulos;
+            font-weight: vars.$f-bold;
             letter-spacing: 0.32px;
 
             span {
-                color: $laranja;
+                color: vars.$laranja;
             }
         }
         .paragraph__previa-project{
             font-size: 16px;
             line-height: 24px;
-            font-weight: $f-regular;
-            color: $branco-2;
+            font-weight: vars.$f-regular;
+            color: vars.$branco-2;
             padding: 20px 0;
 
             span {
@@ -116,12 +118,12 @@
         }
         .link__previa-project{
             font-size: 18px;
-            font-weight: $f-semi-bold;
+            font-weight: vars.$f-semi-bold;
             text-decoration: none;
-            color: $branco-2;
+            color: vars.$branco-2;
             text-transform: uppercase;
             max-width: 145px;
-            background: $azul-escuro;
+            background: vars.$azul-escuro;
             text-align: center;
             padding: 20px 10px;
             border-radius: 5px;
