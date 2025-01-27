@@ -52,7 +52,6 @@
                     &:before {
                         content: '';
                         position: absolute;
-                        position: absolute;
                         bottom: -7px;
                         left: 50%;
                         width: 0;
@@ -62,7 +61,9 @@
                         transform: translate(-50%, -50%); /* Move o ponto central para o centro do link */
                     }
 
-                    &:hover {
+
+                    &:hover,
+                    &.active {
                         &::before {
                             width: 100%;
                         }

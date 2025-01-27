@@ -87,7 +87,7 @@
     .description__skill {
         color: vars.$cinza-claro-2;
         font-size: 18px;
-        font-weight: vars.$f-semi-bold;
+        font-weight: vars.$f-regular;
         text-transform: uppercase;
         margin-bottom: 37px;
     }
@@ -121,7 +121,6 @@
                 color: vars.$branco;
                 margin-top: 15px;
                 font-family: vars.$fonte-titulos;
-                font-style: italic;
                 font-weight: 200;
             }
         }

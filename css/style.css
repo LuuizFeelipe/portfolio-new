@@ -77,7 +77,7 @@
 .hard_skills__container .description__skill {
   color: #BDBDBD;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 37px;
 }
@@ -109,7 +109,6 @@
   color: #FFFFFF;
   margin-top: 15px;
   font-family: "Poppins";
-  font-style: italic;
   font-weight: 200;
 }
 
@@ -168,7 +167,7 @@ footer {
 
 .container__description {
   margin-top: 60px;
-  border-top: 3px solid #1D2E5A;
+  border-top: 1px solid #1D2E5A;
 }
 @media (min-width: 1199px) {
   .container__description {
@@ -216,8 +215,8 @@ footer {
   }
   .description-text {
     margin: 0 40px 15px 40px;
-    line-height: 1.1;
-    font-size: 22px;
+    line-height: normal;
+    font-size: 18px;
   }
 }
 .header {
@@ -272,7 +271,6 @@ footer {
 .header .header__container .menu__desktop nav a:before {
   content: "";
   position: absolute;
-  position: absolute;
   bottom: -7px;
   left: 50%;
   width: 0;
@@ -281,7 +279,7 @@ footer {
   transition: width 0.3s ease, left 0.3s ease; /* Adiciona transição para left */
   transform: translate(-50%, -50%); /* Move o ponto central para o centro do link */
 }
-.header .header__container .menu__desktop nav a:hover::before {
+.header .header__container .menu__desktop nav a:hover::before, .header .header__container .menu__desktop nav a.active::before {
   width: 100%;
 }
 .header .header__container .menu__desktop nav a:last-child {
@@ -510,6 +508,7 @@ footer {
     font-size: 19px;
     line-height: 27px;
     margin-bottom: 30px;
+    font-weight: 300;
   }
   .container__presentation .button-contact {
     grid-area: botao;

@@ -75,10 +75,28 @@ const linksInternos = document.querySelectorAll('a[href^="#"]');
 
 function scrollToSection(event) {
   event.preventDefault();
-  const href = event.currentTarget.getAttribute('href');
+
+  const clickedLink = event.currentTarget;
+
+  // Verifica se o link já está ativo
+  const isActive = clickedLink.classList.contains("active");
+
+  // Remove "active" de todos os links
+  const links = Array.from(event.target.parentNode.children);
+  links.forEach(link => link.classList.remove("active"));
+
+  // Se o link clicado já estava ativo, apenas retorna (desativa o "active")
+  if (isActive) {
+    return;
+  }
+
+  // Adiciona a classe "active" ao link clicado
+  clickedLink.classList.add("active");
+
+  // Faz o scroll para a seção correspondente
+  const href = clickedLink.getAttribute('href');
   const section = document.querySelector(href);
   const topo = section.offsetTop;
-  console.log(section);
 
   window.scrollTo({
     top: topo - 100,
