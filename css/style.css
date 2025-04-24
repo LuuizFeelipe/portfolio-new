@@ -14,8 +14,9 @@
     font-size: 80px;
   }
   .skills__container .hard_skills__container .abillitys {
-    gap: 35px;
+    gap: 25px;
     justify-content: flex-start;
+    cursor: pointer;
   }
   .skills__container .hard_skills__container .abillitys .abillity {
     max-width: 150px;
@@ -95,6 +96,7 @@
   justify-content: center;
   flex: 1 0 125px;
   max-width: 150px;
+  min-width: 150px;
   min-height: 125px;
   background: #2E3F6D;
   border-bottom: 5px solid #7182AF;

@@ -16,8 +16,9 @@
             }
 
             .abillitys {
-                gap:35px;
+                gap: 25px;
                 justify-content: flex-start;
+                cursor: pointer;
     
                 .abillity {
                     max-width: 150px;
@@ -94,30 +95,32 @@
 }
 
 .hard_skills__container {
-    .abillitys{
+    .abillitys {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         gap: 20px;
 
-        .abillity{
+        .abillity {
             display: flex;
             flex-direction: column;
             justify-content: center;
             flex: 1 0 125px;
             max-width: 150px;
+            min-width: 150px;
             min-height: 125px;
             background: vars.$azul-claro-2;
             border-bottom: 5px solid vars.$azul-claro-3;
             border-radius: 10px 10px 0 0;
             text-align: center;
 
-            .icon__abillity{
+            .icon__abillity {
                 color: vars.$branco;
                 font-size: 70px;
             }
-            .title__abillity{
+
+            .title__abillity {
                 color: vars.$branco;
                 margin-top: 15px;
                 font-family: vars.$fonte-titulos;
